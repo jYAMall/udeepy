@@ -13,26 +13,17 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 .App-link {
   color: #61dafb;
 }
 .bg1 {
-  background-color:#ffffff;
+  background-color:#1e2741;
   background-image: 
      
-    radial-gradient(at 100% 0%, #f15a24 0, transparent 50%),
-    radial-gradient(at 0% 100%, #009aff 0, transparent 50%);
+    radial-gradient(at 100% 50%, #f15a24 0, transparent 50%),
+    radial-gradient(at 100% 0%, #009aff 0, transparent 50%);
 }
 .bg2 {
   background-color:#ffffff;
@@ -62,17 +53,23 @@
 }
 .menu {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+ 
   z-index: 1;
+  
 }
 
 .menu img {
   float: left;
   margin: 0 0 0 20px;
+}
+.menu a {
+  font-size:medium;
+  color: rgb(233, 233, 233);
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 0 0 20px;
+  text-align:center;
+  right: 50%;
 }
 .white-glassmorphism {
   background: rgba(255, 255, 255, 0.476);
@@ -80,6 +77,15 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.354);
+}
+
+.blue-glassmorphism {
+  background: rgb(39, 51, 89, 0.4);
+  border-radius: 0px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .svgimg {

@@ -4,14 +4,26 @@ import logo from './logo.svg';
 function Menu() {
   return (
     
-    <div className='white-glassmorphism menu '>
-        <div className='flex justify-between'>
+    <div className='blue-glassmorphism menu flex justify-between text-justify text-black'>
+        
             <img src={logo} alt="logo" className='svgimg'/>
-            <a href='#home'>Home</a>
-            <a href='#services'>Services</a>
-            <a href='#works'>Works</a>
-            <a href='#contacts'>Contacts</a>
-        </div>
+
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#works">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#contacts">Contacts</a>
+                </li>
+            </ul>
+            
+
     </div>
   )
 }
