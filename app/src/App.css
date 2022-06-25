@@ -19,31 +19,25 @@
   color: #61dafb;
 }
 .bg1 {
-  background-color:#1e2741;
+  background-color:#1A2238;
   background-image: 
-     
-    radial-gradient(at 100% 50%, #f15a24 0, transparent 50%),
     radial-gradient(at 100% 0%, #009aff 0, transparent 50%);
 }
 .bg2 {
-  background-color:#ffffff;
+  background-color:#1A2238;
   background-image: 
-     
-    radial-gradient(at 100% 100%, #c6008f 0, transparent 50%),
-    radial-gradient(at 0% 0%, #009aff 0, transparent 50%);
+    radial-gradient(at 0% 50%, #c6008f 0, transparent 50%);
 }
 .bg3 {
-  background-color:#ffffff;
+  background-color:#1A2238;
   background-image: 
      
-    radial-gradient(at 100% 0%, #c6008f 0, transparent 50%),
-    radial-gradient(at 0% 100%, #f15a24 0, transparent 50%);
+    radial-gradient(at 100% 50%, #f15a24 0, transparent 50%);
 }
 .bg4 {
-  background-color:#ffffff;
+  background-color:#1A2238;
   background-image: 
-  radial-gradient(at 100% 100%, #009aff 0, transparent 50%),
-  radial-gradient(at 0% 0%, #f15a24 0, transparent 50%);
+  radial-gradient(at 0% 100%, #009aff 0, transparent 50%);
 }
 
 .box {
@@ -53,14 +47,14 @@
 }
 .menu {
   position: fixed;
- 
+  width: 100%;
   z-index: 1;
   
 }
 
 .menu img {
   float: left;
-  margin: 0 0 0 20px;
+  margin: 20px 0 20px 20px;
 }
 .menu a {
   font-size:medium;
@@ -87,6 +81,7 @@
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(0, 0, 0, 0);
 }
+
 
 .svgimg {
   height: 40px;

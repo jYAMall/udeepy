@@ -4,11 +4,11 @@ import logo from './logo.svg';
 function Menu() {
   return (
     
-    <div className='blue-glassmorphism menu flex justify-between text-justify text-black'>
+    <div className='flex blue-glassmorphism menu justify-between text-justify text-black'>
         
-            <img src={logo} alt="logo" className='svgimg'/>
+            <img src={logo} alt="logo" className='svgimg flex'/>
 
-            <ul class="nav justify-content-center">
+            <ul class="nav justify-content-center w-full flex md:justify-center justify-between items-center p-4 ">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#home">Home</a>
                 </li>
