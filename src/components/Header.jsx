@@ -14,7 +14,7 @@ function Header() {
                         Let's work together and make something meaningful.
                     </h1>
                 </div>
-                <img src={rocketwoman} className="md:w-[40%] w-[52%]  md:mx-5 mx-auto md:py-0 py-4" alt='rockets' />
+                <img src={rocketwoman} className="md:w-[40%] w-[52%]  md:mx-5 mx-auto md:py-0 py-4" alt='rocket' />
             </div>
             <a className='button-down' href='#services' ><AiOutlineDown/></a>
         </div>
