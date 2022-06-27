@@ -21,7 +21,7 @@
 .bg1 {
   background-color:#1A2238;
   background-image: 
-    radial-gradient(at 100% 0%, #0099ff2b 0, transparent 0%);
+    radial-gradient(at 100% 60%, #c6008e77 0, transparent 40%);
 }
 .bg2 {
   background-color:#1A2238;
@@ -99,8 +99,7 @@
 /* CSS */
 .bt {
   padding: 0.6em 2em;
-  border: 4px;
-  border-color: #fff;
+  border: none;
   outline: none;
   color: rgb(255, 255, 255);
   background: #1A2238;
@@ -137,6 +136,20 @@
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
+.button-down {
+  color: #fff;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  z-index: 10;}
 
 @keyframes glowing-button-85 {
   0% {
