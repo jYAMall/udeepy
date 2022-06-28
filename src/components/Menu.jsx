@@ -1,6 +1,7 @@
 
 import React, {useState} from 'react'
 import logo from './logo.svg';
+import { BsGithub, BsLinkedin, BsFacebook } from 'react-icons/bs';
 
 export const Menu = () => {
 
@@ -15,7 +16,7 @@ export const Menu = () => {
         
         <div className='flex  menu justify-between text-justify'>
             
-                <img src={logo} alt="logo" className='svgimg flex'/>
+                <img src={logo} alt="logo" className='svgimg flex '/>
 
                 <ul className="nav justify-content-center w-full flex md:justify-center justify-between items-center p-4 ">
                     <li className="nav-item">
@@ -32,7 +33,9 @@ export const Menu = () => {
                     </li>
                 </ul>
 
-                <button className='bt'>Сontact now</button>
+                <nav className='button-social' href='#home'><BsGithub/></nav>
+                <nav className='button-social' href='#home'><BsLinkedin/></nav>
+                <nav className='button-social' href='#home'><BsFacebook/></nav>
                 
 
         </div>

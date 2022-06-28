@@ -19,23 +19,23 @@
   color: #61dafb;
 }
 .bg1 {
-  background-color:#1A2238;
+  background-color:#0a0d16;
   background-image: 
     radial-gradient(at 100% 60%, #c6008e77 0, transparent 40%);
 }
 .bg2 {
-  background-color:#1A2238;
+  background-color:#0a0d16;
   background-image: 
     radial-gradient(at -30% 50%, #c6008e2f 0, transparent 50%);
 }
 .bg3 {
-  background-color:#1A2238;
+  background-color:#0a0d16;
   background-image: 
      
     radial-gradient(at 100% 50%, #f15b2431 0, transparent 50%);
 }
 .bg4 {
-  background-color:#1A2238;
+  background-color:#0a0d16;
   background-image: 
   radial-gradient(at 0% 100%, #0099ff2b 0, transparent 50%);
 }
@@ -43,12 +43,13 @@
 .box {
   height: 100%;
   min-height: 100vh;
-  
+  scroll-snap-align: start;
 }
+
 .menu {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
   
 }
 .nav-item.nav-link :active {
@@ -98,21 +99,21 @@
 
 /* CSS */
 .bt {
-  padding: 0.6em 2em;
+  padding: 0.8em 2em;
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
-  background: #1A2238;
+  background: #0a0d16;
   cursor: pointer;
   text-transform: uppercase;
-  font-size:small;
+  font-size:medium;
   white-space: nowrap;
   position: relative;
   border-radius: 10px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin: 20px;
+  margin: 60px;
 }
 
 .bt:before {
@@ -141,7 +142,7 @@
   width: 34px;
   height: 34px;
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -161,6 +162,27 @@
   100% {
     background-position: 0 0;
   }
+}
+.animimg {
+  animation: rotate 40s;
+  animation-iteration-count: infinite;
+}
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.animimg:hover {
+  animation: zoom 40s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoom {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.8); }
+  100% { transform: scale(1); }
 }
 
 .button-85:after {
@@ -182,4 +204,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.button-social {
+  color: #fff;
+  margin: 30px 20px 0 0;
 }
