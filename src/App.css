@@ -69,8 +69,15 @@
   text-align:center;
   right: 50%;
 }
+
 .menu li a.active{
   font-weight:bold;
+}
+
+.menu a p{
+  font-size:x-large;
+  color: rgb(233, 233, 233);
+  text-transform: uppercase;
 }
 
 .white-glassmorphism {
@@ -206,7 +213,12 @@
   }
 }
 
-.button-social {
+a.button-social {
   color: #fff;
   margin: 30px 20px 0 0;
+}
+
+.button-social-m {
+  color: #fff;
+  font-size: 1.75rem;
 }
