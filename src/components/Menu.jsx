@@ -51,17 +51,15 @@ export const Menu = () => {
 
                 <div className='flex relative'>
                 {toggleMenu
-                ? <AiOutlineClose frontSize={28} className='text-white md:hidden cursor-pointer' onClick={() => setToggleMenu (false)} />
-                : <HiMenuAlt4 frontSize={28} className='text-white md:hidden cursor-pointer' onClick={() => setToggleMenu (true)}/>
+                ? <AiOutlineClose className='toggle text-white md:hidden cursor-pointer' onClick={() => setToggleMenu (false)} />
+                : <HiMenuAlt4 className='toggle text-white md:hidden cursor-pointer' onClick={() => setToggleMenu (true)}/>
                 }
                 {toggleMenu && (
                     <ul
                         className='z-10 fixed top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none
                             flex flex-col justify-start items-center rounded-md blue-glassmorphism text-white animate-slide-in'
                     >
-                        <li className='text-xl w-full my-2'>
-                            <AiOutlineClose onClick={() => setToggleMenu(false)} />
-                        </li>
+                        
                         {[
                             
                             <ul className="text-center">
@@ -82,7 +80,7 @@ export const Menu = () => {
                         ].map((item, index) => (
                             <NavBarItem key={item + index} title={item} classProps='my-2 text-lg'/>
                         ))} 
-                            <div className='flex '>
+                            <div className='flex py-8'>
                                 <nav className='button-social-m mx-8' href='#home'><BsGithub/></nav>
                                 <nav className='button-social-m mx-8' href='#home'><BsLinkedin/></nav>
                                 <nav className='button-social-m mx-8' href='#home'><BsFacebook/></nav> 
