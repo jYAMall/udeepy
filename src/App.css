@@ -37,13 +37,13 @@
 .bg4 {
   background-color:#0a0d16;
   background-image: 
-  radial-gradient(at 0% 100%, #0099ff2b 0, transparent 50%);
+  radial-gradient(at 0% 100%, #0099ff70 0, transparent 50%);
+  position: relative;
 }
 
 .box {
   height: 100%;
-  min-height: 100vh;
-  scroll-snap-align: start;
+  height: 100vh;
 }
 
 .menu {
@@ -109,7 +109,7 @@
   padding: 0.8em 2em;
   border: none;
   outline: none;
-  color: rgb(255, 255, 255);
+  color: rgb(233, 233, 233);
   background: #0a0d16;
   cursor: pointer;
   text-transform: uppercase;
@@ -145,7 +145,7 @@
   border-radius: 10px;
 }
 .button-down {
-  color: #fff;
+  color: rgb(233, 233, 233);
   width: 34px;
   height: 34px;
   position: absolute;
@@ -214,17 +214,82 @@
 }
 
 a.button-social {
-  color: #fff;
+  color: rgb(233, 233, 233);
   margin: 30px 20px 0 0;
 }
 
 .button-social-m {
-  color: #fff;
+  color: rgb(233, 233, 233);
   font-size: 1.75rem;
 }
 
 .toggle {
   font-size: 1.75rem;
-  margin: 20px 20px 0 0;
+  margin: 30px 30px 0 0;
   z-index: 11;
 }
+
+.contleft{ /* or absolute */
+  padding: 1rem;
+  background-color: #141a2c;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  margin-inline: 2rem;
+  color: rgb(233, 233, 233);
+  justify-content: center;
+
+}
+
+.contright{
+  padding: 1.5rem;
+  background-color: #141a2c;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  margin-inline: 2rem;
+  color: rgb(233, 233, 233);
+  justify-content: center;
+  
+}
+
+.cont{
+  top:50%;
+  width: 100%;
+  transform: translate(0%, -50%);
+}
+.icons {
+  font-size: xx-large;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 1.3rem;
+  background-color: #141a2c;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 8px;
+  margin-bottom: 0.3rem;
+  color: rgb(233, 233, 233);
+  justify-content: center;
+  outline: none;
+  border: none;
+  margin-top:1rem ;
+}
+textarea{
+  resize: none;
+  height: 130px;
+}
+
+label{
+  font-size: 1.1rem;
+  color: rgb(233, 233, 233);
+  float: left;
+  margin-right: 1em;
+}
+

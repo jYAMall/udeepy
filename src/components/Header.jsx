@@ -5,8 +5,8 @@ import {AiOutlineDown} from "react-icons/ai";
 
 function Header() {
   return (
-    <section id='home' className='snap-y'>
-        <div className='box snap-center flex w-full justify-center items-center bg1'>
+    <section id='home' >
+        <div className='box flex w-full justify-center items-center bg1'>
             <div className="md:flex items-center md:justify-between  pt-6 ">
                 <div className="md:w-1/2 z-0 ">
                     <h1 className="text-[#d2cfdd] w-full font-Bellefair pb-2 text-5xl p-4">We are always open to new projects and can turn any idea into reality. </h1>
