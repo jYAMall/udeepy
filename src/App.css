@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -21,23 +22,35 @@
 .bg1 {
   background-color:#0a0d16;
   background-image: 
-    radial-gradient(at 100% 60%, #c6008e77 0, transparent 40%);
+    radial-gradient(at 100% 60%, #c6008e77 0, transparent 40%), url('image2.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .bg2 {
   background-color:#0a0d16;
-  background-image: 
-    radial-gradient(at -30% 50%, #c6008e2f 0, transparent 50%);
+  background-image: url('image2-svg.svg'),
+    radial-gradient(at -30% 50%, #c6008e97 0, transparent 50%);
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
 }
 .bg3 {
   background-color:#0a0d16;
-  background-image: 
-     
-    radial-gradient(at 100% 50%, #f15b2431 0, transparent 50%);
+  background-image: url('image3.svg'),
+    radial-gradient(at 100% 50%, #f15b2493 0, transparent 50%);
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .bg4 {
   background-color:#0a0d16;
-  background-image: 
-  radial-gradient(at 0% 100%, #0099ff70 0, transparent 50%);
+  background-image:  url('image2-svg.svg'),
+  radial-gradient(at 0% 100%, #0099ffb6 0, transparent 50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
 }
 
@@ -90,7 +103,7 @@
 
 .blue-glassmorphism {
   background: rgb(39, 51, 89, 0.4);
-  border-radius: 0px;
+  border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -120,7 +133,6 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin: 60px;
 }
 
 .bt:before {
@@ -157,7 +169,7 @@
   -webkit-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
-  z-index: 9;}
+  z-index: 20;}
 
 @keyframes glowing-button-85 {
   0% {
@@ -231,11 +243,10 @@ a.button-social {
 
 .contleft{ /* or absolute */
   padding: 1rem;
-  background-color: #141a2c;
   display: flex;
   align-items: center;
   gap: 2rem;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 2rem;
   margin-inline: 2rem;
   color: rgb(233, 233, 233);
@@ -245,11 +256,10 @@ a.button-social {
 
 .contright{
   padding: 1.5rem;
-  background-color: #141a2c;
   display: flex;
   align-items: center;
   gap: 2rem;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 2rem;
   margin-inline: 2rem;
   color: rgb(233, 233, 233);
@@ -269,11 +279,10 @@ a.button-social {
 input, textarea{
   width: 100%;
   padding: 1.3rem;
-  background-color: #141a2c;
   display: flex;
   align-items: center;
   gap: 2rem;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 0.3rem;
   color: rgb(233, 233, 233);
   justify-content: center;
@@ -293,3 +302,43 @@ label{
   margin-right: 1em;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-center {
+  flex: 1;
+  text-align: center;
+}
+
+.tabs {
+  flex-direction: column;
+  padding: 0 10px 0 0;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 20px;
+  border-bottom: 0;
+  text-align: center;
+  transition: background-color 0.2s;
+  color: #d2cfdd;
+}
+
+
+.tab.active {
+  background-color: #0a0d16;
+  border-radius: 10px;
+  color: white;
+}
+
+.tab-content {
+  padding: 0 0 0 6px;
+}
