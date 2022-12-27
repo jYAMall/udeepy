@@ -4,11 +4,11 @@ import {MdOutlineEmail}from "react-icons/md";
 import {MdPhone}from "react-icons/md";
 import logo_svg from './logo-svg.svg';
 
-
-function Contacts() {
+const Contacts = () => {
   return (
-    <section id='contacts' className='box bg4 '>
-      <div className='flex md:flex'>
+    <div id='contacts' className='bg4 min-h-screen'>
+        <div className=''>
+        <div className=''>
         <div className='md:grid gap-4 grid-cols-2 cont absolute '>
           <div className='pt-7 '>
             <div className='contleft blue-glassmorphism'>
@@ -44,10 +44,9 @@ function Contacts() {
             © 2020-2022 Udeepy. All rights reserved.
           </div>
           </div>
-    </section>
-    
-  )
+        </div>
+    </div>
+  );
 }
 
-export default Contacts
-
+export default Contacts;

@@ -1,19 +1,30 @@
 import React, { useState } from 'react';
+import ico_react from './icons8-react-native.svg';
+import solidity from './icons8-solidity.svg';
+import javascript from './icons8-javascript.svg';
+import python from './icons8-python.svg';
+import css from './icons8-css-filetype-64.png';
+import ethereum from './icons8-ethereum.svg';
+import solana from './icons8-solana.svg';
 
-function Works() {
-  const [activeTab, setActiveTab] = useState(1);
+const Works = () => {
 
-  function handleTabClick(id) {
-    setActiveTab(id);
-  }
+    const [activeTab, setActiveTab] = useState(1);
+
+    function handleTabClick(id) {
+      setActiveTab(id);
+    }
+
+
   return (
-    
-    <section id='works'>
-        <div className='box bg3 flex md:flex w-full justify-center items-center px-8 '>
-          <div className="flex md:flex">
-            <div className="tabs basis-1/3 ">
-            <h1 className="text-[#d2cfdd] w-full font-Bellefair pb-2 text-2xl p-4 mb-5">"As believers in the power of blockchain technology to transform industries and drive innovation, we are committed to helping our clients turn their boldest vision into a reality through the use of this revolutionary technology."</h1>
-              <div className='px-2 blue-glassmorphism py-2'>
+    <div id='works' className='bg3'>
+        <div className='min-h-screen'>
+        <div className=" md:grid grid-cols-3 gap-4 bg3 px-8 items-center py-16">
+        <div className="col-span-3">
+          <h1 className="text-[#d2cfdd] w-full font-Bellefair pb-2 text-2xl p-4 mb-5">"As believers in the power of blockchain technology to transform industries and drive innovation, we are committed to helping our clients turn their boldest vision into a reality through the use of this revolutionary technology."</h1>
+        </div>
+        <div className="...">
+        <div className='px-2 blue-glassmorphism py-2'>
               <div
                 className={`tab ${activeTab === 1 ? 'active' : ''}`}
                 onClick={() => handleTabClick(1)}
@@ -45,9 +56,9 @@ function Works() {
                 Government
               </div>
               </div>
-            </div>
-            <div className="tab-content basis-2/3 ">
-              <div className='px-2 blue-glassmorphism py-2'>
+        </div>
+        <div className="col-span-2 ...">
+        <div className='px-2 blue-glassmorphism py-2 flex md:flex overflow-auto h-32'>
               {activeTab === 1 && <div className='text-[#d2cfdd] py-5 px-5 text-justify'>At our company, we specialize in developing innovative fintech blockchain solutions that drive change and drive innovation in the financial industry. Our team of experienced developers has extensive knowledge and expertise in blockchain technology, and we are committed to helping our clients realize the full potential of this transformative technology.<br/><br/>
 
 Our development services for fintech blockchain solutions cover a wide range of areas, including the creation of decentralized financial platforms and products, such as cryptocurrency exchanges, lending platforms, and payment systems. We also offer services for the development of smart contracts, which are self-executing contracts that enable the automation of contract execution and the secure and transparent transfer of assets.<br/><br/>
@@ -82,11 +93,29 @@ In addition to these core services, we also offer consulting and project managem
 
 Overall, our goal is to help you leverage the power of blockchain technology to optimize and streamline your government operations, driving efficiency, transparency, and security. If you are interested in learning more about our government blockchain development services, please don't hesitate to contact us. We would be happy to discuss your project in more detail and help you determine the best course of action.</div>}
               </div>
-            </div>
+        </div>
+        
+        <div className="...">
+          <h1 className="text-[#d2cfdd] w-full font-Bellefair pb-2 text-2xl p-4 mb-5">Our main technology stack:</h1>
+        </div>
+        <div className="col-span-2 px-2 blue-glassmorphism  md:grid grid-cols-3">
+            <div className='flex'>
+          <img className='svgimg60' src={ico_react} alt="React development" />
+          <img className='svgimg60' src={solidity} alt="Solidity development" />
+          <img className='svgimg60' src={javascript} alt="JavaScript development" />
+          <img className='svgimg60' src={python} alt="Python development" />
+          <img className='svgimg60' src={css} alt="CSS development" />
           </div>
+          <div className='flex'>
+          <img className='svgimg60' src={ethereum} alt="Ethereum development" />
+          <img className='svgimg60' src={solana} alt="Solana development" />
+          </div>
+        </div>
+        
+      </div>
+        </div>
     </div>
-    </section>
-  )
+  );
 }
 
-export default Works
+export default Works;

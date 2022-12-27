@@ -1,11 +1,12 @@
 import React from 'react';
 import {AiOutlineDown} from "react-icons/ai";
 
-function Services() {
+const Services = () => {
   return (
-    <section id='services' className='relative bg2'>
-    <div className='box flex md:flex w-full justify-center items-center px-8'>
-        <div className="grid gap-4 md:grid-cols-3 grid-rows-2 ms:flex">
+    <div id='services' className='bg2'>
+        <div className='min-h-screen'>
+        <div className='flex md:flex  justify-center items-center px-8 py-32'>
+        <div className="grid gap-4 md:grid-cols-3 grid-rows-2">
         <div className='px-2 blue-glassmorphism'>
           <h1 className="w-full text-[#d2cfdd] text-2xl py-2">DeFi (Decentralized Finance)</h1>
           <p className='text-white py-2 px-2'>DeFi is a financial system built on blockchain technology that allows for financial transactions and activities to be conducted in a decentralized manner. DeFi has the potential to disrupt traditional financial systems by providing a more efficient, accessible, and transparent alternative.</p>
@@ -33,8 +34,9 @@ function Services() {
         </div>
         <a className='button-down' href='#works' ><AiOutlineDown/></a>
     </div>
-</section>
-  )
+        </div>
+    </div>
+  );
 }
 
-export default Services
+export default Services;

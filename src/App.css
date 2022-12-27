@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   
+  
 }
 
 .App-logo {
@@ -52,11 +53,6 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-}
-
-.box {
-  height: 100%;
-  height: 100vh;
 }
 
 .menu {
@@ -114,7 +110,9 @@
 .svgimg {
   height: 40px;
 }
-
+.svgimg60 {
+  height: 60px;
+}
 
 
 /* CSS */
@@ -268,7 +266,7 @@ a.button-social {
 }
 
 .cont{
-  top:50%;
+  top:45%;
   width: 100%;
   transform: translate(0%, -50%);
 }
@@ -341,4 +339,22 @@ label{
 
 .tab-content {
   padding: 0 0 0 6px;
+}
+
+.h-32{
+  height: 28rem;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  
+}
+
+.h-min {
+  min-height: 100vh;
 }
