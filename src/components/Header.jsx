@@ -10,7 +10,7 @@ const Home = () => {
                     <h1 className="text-white font-Bellefair pb-2 text-xl p-8 py-14">
                     We are a company that specializes in the development of blockchain solutions. Whether you are looking to launch your own cryptocurrency or want to build a decentralized application, we have the expertise to help you succeed.
                     </h1>
-                    <button className='bt pt-14 mt-5' onClick={() => window.open('/consultation')}>Get a Consultation</button>
+                    <button className='bt pt-14 mt-5' onClick={() => window.open('https://calendly.com/eugene0mart/a-15-minute-consultation-regarding-blockchain-technology')}>Get a Consultation</button>
                 </div>
             </div>
         </div>
